@@ -3,25 +3,27 @@
     "displayName": "touch",
     "description": "A litle extension to add only block comments and navigate between openned files",
     "version": "0.0.1",
+    "publisher": "LeJoW",
     "engines": {
         "vscode": "^1.56.0"
     },
     "categories": [
         "Other"
     ],
-    "activationEvents": [
-        "onCommand:touchBar-vscode.navLeft",
-        "onCommand:touchBar-vscode.navRight"
-    ],
+    "activationEvents": [],
     "main": "./dist/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "touchBar-vscode.navLeft",
+                "command": "editor.action.blockComment",
+                "title": "/* */"
+            },
+            {
+                "command": "workbench.action.previousEditor",
                 "title": "↰"
             },
             {
-                "command": "touchBar-vscode.navRight",
+                "command": "workbench.action.nextEditor",
                 "title": "↱"
             }
         ],
@@ -29,15 +31,15 @@
             "touchBar": [
                 {
                     "command": "editor.action.blockComment",
-                    "group": "editing"
+                    "group": "editor"
                 },
                 {
-                    "command": "touchBar-vscode.navLeft",
-                    "group": "window"
+                    "command": "workbench.action.previousEditor",
+                    "group": "workbench"
                 },
                 {
-                    "command": "touchBar-vscode.navRight",
-                    "group": "window"
+                    "command": "workbench.action.nextEditor",
+                    "group": "workbench"
                 }
             ]
         }
