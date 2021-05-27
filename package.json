@@ -1,6 +1,6 @@
 {
     "name": "touchBar-vscode",
-    "displayName": "touch",
+    "displayName": "touchBar-vscode",
     "description": "A litle extension to add only block comments and navigate between openned files",
     "version": "0.0.1",
     "publisher": "LeJoW",
